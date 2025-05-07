@@ -30,74 +30,60 @@
         }
     </style>
 </head>
-<body class="bg-light min-vh-100 d-flex flex-column">
+<body class="bg-light min-vh-100">
 
-    <!-- Navbar -->
-    {#
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-semibold" href="#">Banyar Oo</a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav me-auto">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="#">Projects</a>
-                    <a class="nav-link" href="#">Others</a>
-                    <a class="nav-link" href="#">Photos</a>
+    <div class="d-flex flex-column vh-100">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 w-100 container-fluid">
+            <div class="row w-100">   
+                <div class="col-12 d-flex flex-wrap align-items-center justify-content-evenly gap-5 d-none d-md-flex">
+                    <a class="nav-link fs-6 text-light" href="#">Home</a>
+                    <a class="nav-link fs-6 text-light" href="#">Projects</a>
+                    <a class="nav-link fs-6 text-light" href="#">Others</a>
+                    <a class="nav-link fs-6 text-light" href="#">Photos</a>
                 </div>
-                <div class="d-flex gap-3">
-                    <a class="nav-link text-light" href="https://github.com/HenryOo262"><i class="fab fa-github"></i></a>
-                    <a class="nav-link text-light" href="#"><i class="fab fa-facebook"></i></a>
-                    <a class="nav-link text-light" href="#"><i class="fa fa-envelope"></i></a>
-                    <a class="nav-link text-light" href="#"><i class="fab fa-linkedin"></i></a>
+                <div class="col-12 flex-wrap align-items-center justify-content-center gap-5 d-flex d-md-none">
+                    <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-home text-light"></i></i></a>
+                    <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-code text-light"></i></a>
+                    <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-ellipsis-h text-light"></i></i></a>
+                    <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-image text-light"></i></a>
                 </div>
             </div>
-        </div>
-    </nav>
-    #}
+        </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 w-100 container-fluid">
-        <div class="row w-100">   
-            <div class="col-12 d-flex flex-wrap align-items-center justify-content-evenly gap-5 d-none d-md-flex">
-                <a class="nav-link fs-6 text-light" href="#">Home</a>
-                <a class="nav-link fs-6 text-light" href="#">Projects</a>
-                <a class="nav-link fs-6 text-light" href="#">Others</a>
-                <a class="nav-link fs-6 text-light" href="#">Photos</a>
+        <section class="container my-auto py-5">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
+                <img src="{{ url_for('static', filename='img/me.jpg') }}" class="rounded-circle border border-3 border-dark profile" alt="Banyar Oo">
+                <div class="text-center text-md-start">
+                    <p class="fs-2 fw-semibold mb-2">I'm Banyar Oo</p>
+                    <p class="mb-0">
+                        <p style="text-align: justify;">
+                            I'm a junior backend developer currently pursuing a Bachelor of Computer Science (B.C.Sc) in Knowledge Engineering at 
+                            <a class="text-decoration-none" href="https://ucsy.edu.mm" target="_blank">University of Computer Studies, Yangon</a>.
+                            I'm passionate about data, artificial intelligence, and backend web development, and my goal is to become a Machine Learning Engineer 
+                            and pursue a Master's degree overseas.
+                        </p>
+                    </p>
+                </div>
             </div>
-            <div class="col-12 flex-wrap align-items-center justify-content-center gap-5 d-flex d-md-none">
-                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-home text-light"></i></i></a>
-                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-code text-light"></i></a>
-                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-ellipsis-h text-light"></i></i></a>
-                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-image text-light"></i></a>
-            </div>
-        </div>
-    </nav>
+        </section>
 
-    <section class="container my-auto py-5">
-        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4">
-            <img src="{{ url_for('static', filename='img/me.jpg') }}" class="rounded-circle border border-3 border-dark profile" alt="Banyar Oo">
-            <div class="text-center text-md-start">
-                <p class="fs-2 fw-semibold mb-2">I'm Banyar Oo</p>
-                <p class="mb-0">
-                    I'm a backend developer and currently studying for B.C.Sc (Knowledge Engineering) at 
-                    <a class="text-decoration-none" href="https://ucsy.edu.mm">University of Computer Studies, Yangon.</a>
-                </p>
+        <section class="container mb-2 w-100">
+            <div class="col-8 mx-auto p-2">
+                <div class="d-flex align-items-center justify-content-center gap-5"> 
+                    <a class="nav-link text-light" href="https://github.com/HenryOo262"><i class="fab fa-github text-dark"></i></a>
+                    <a class="nav-link text-light" href="#"><i class="fab fa-facebook text-dark"></i></a>
+                    <a class="nav-link text-light" href="mailto:oobanyar127@gmail.com"><i class="fa fa-envelope text-dark"></i></a>
+                    <a class="nav-link text-light" href="#"><i class="fab fa-linkedin text-dark"></i></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container mb-2 w-100">
-        <div class="col-8 mx-auto p-2">
-            <div class="d-flex align-items-center justify-content-center gap-5"> 
-                <a class="nav-link text-light" href="https://github.com/HenryOo262"><i class="fab fa-github text-dark"></i></a>
-                <a class="nav-link text-light" href="#"><i class="fab fa-facebook text-dark"></i></a>
-                <a class="nav-link text-light" href="mailto:oobanyar127@gmail.com"><i class="fa fa-envelope text-dark"></i></a>
-                <a class="nav-link text-light" href="#"><i class="fab fa-linkedin text-dark"></i></a>
-            </div>
-        </div>
-    </section>
+        <section class="container mb-2 mt-4 w-100">
+            <footer class="col-8 mx-auto p-2 d-flex align-items-center justify-content-center text-muted">
+                <small> &copy; 2025 Henry Oo. All rights reserved.  </small>
+            </footer>
+        </section>
+    </div>
 
 </body>
 </html>
