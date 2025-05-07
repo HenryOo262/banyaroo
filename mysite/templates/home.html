@@ -31,8 +31,10 @@
     </style>
 </head>
 <body class="bg-light min-vh-100">
-
+    
     <div class="d-flex flex-column vh-100">
+
+        {#
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-3 w-100 container-fluid">
             <div class="row w-100">   
                 <div class="col-12 d-flex flex-wrap align-items-center justify-content-evenly gap-5 d-none d-md-flex">
@@ -41,12 +43,21 @@
                     <a class="nav-link fs-6 text-light" href="#">Others</a>
                     <a class="nav-link fs-6 text-light" href="#">Photos</a>
                 </div>
-                <div class="col-12 flex-wrap align-items-center justify-content-center gap-5 d-flex d-md-none">
+                <div class="flex-wrap align-items-center justify-content-center gap-5 d-flex d-md-none">
                     <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-home text-light"></i></i></a>
                     <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-code text-light"></i></a>
                     <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-ellipsis-h text-light"></i></i></a>
                     <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-image text-light"></i></a>
                 </div>
+            </div>
+        </nav> #}
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 py-3 w-100">
+            <div class="w-100 d-flex flex-wrap align-items-center justify-content-md-evenly justify-content-center gap-5">
+                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-home text-dark"></i></i></a>
+                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-code text-dark"></i></a>
+                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-ellipsis-h text-dark"></i></i></a>
+                <a class="nav-link fs-6 text-light" href="#"><i class="fas fa-image text-dark"></i></a>
             </div>
         </nav>
 
@@ -79,7 +90,7 @@
         </section>
 
         <section class="container mb-2 mt-4 w-100">
-            <footer class="col-8 mx-auto p-2 d-flex align-items-center justify-content-center text-muted">
+            <footer class="col-12 col-md-8 mx-auto p-2 d-flex align-items-center justify-content-center text-muted">
                 <small> &copy; 2025 Henry Oo. All rights reserved.  </small>
             </footer>
         </section>
